@@ -22,3 +22,17 @@ default is:
 __SPEC__FILE__
 
 see my template
+
+
+Input                      Build from 
+                           .spec file
+--------                   -----------------
+
+rpmbuild/           -+
+|-- BUILD            |       %pre 
+|-- BUILDROOT        |       %build
+|-- RPMS             +--->   %install
+|-- SOURCES          |       %files
+|-- SPECS            |       %clean
+`-- SRPMS           -+
+ 
