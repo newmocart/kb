@@ -37,17 +37,22 @@ Packager:
 # It Prepares for the build. Usually
 # 1) Delete all files from the previous build
 # 2) untar sources from SOURCES into BUILD folders 
-#
+# %setup -q - it's standart macros to do it
 %prep
+
+%setup -q
 
 #
 # build the package. It is similar to 'make' command
 #
 %build
+make
+
 
 #
 # install. like 'make install'. put files in destination folder
-#
+# or you copy manual files from ~/rpmbuild/BUILD to ~/rpmbuild/BUILDROOT
+# 
 %install
 
 #
