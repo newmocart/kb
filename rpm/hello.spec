@@ -1,3 +1,6 @@
+# disable degug packages creating
+%define debug_package %{nil}
+
 Summary: Hello Maks 
 Name:  hello
 Version: 0.0.0.1 
