@@ -25,6 +25,7 @@ echo "make hello"
 make hello
 
 %install
+rm -rf $RPM_BUILD_ROOT
 %{__mkdir} $RPM_BUILD_ROOT/tmp 
 cp hello $RPM_BUILD_ROOT/tmp
 
